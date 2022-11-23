@@ -1,0 +1,13 @@
+h1 {
+  color: rgb(252, 111, 181);
+  margin: 150px;
+  margin-left: 600px;
+  background-color: rgb(188, 211, 255);
+}
+
+section {
+  padding: 24px 48px;
+  background-color: rgb(250, 219, 179);
+  margin-bottom: 36px;
+  border-radius: 100px;
+}
