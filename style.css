@@ -1,4 +1,4 @@
-h1 {
+body {
   color: rgb(252, 111, 181);
   margin: 150px;
   margin-left: 600px;
@@ -10,4 +10,12 @@ section {
   background-color: rgb(250, 219, 179);
   margin-bottom: 36px;
   border-radius: 100px;
+}
+
+pre {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tekstovi {
+  margin: 48px 0;
 }
