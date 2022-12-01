@@ -13,7 +13,7 @@ a {
   color: initial;
 }
 .header__inner {
-  width: 1400px;
+  width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ a {
 .header__link {
   margin-right: 48px;
   color: white;
-  font-family: Tahoma;
+  font-family: "Times New Roman";
 }
 
 .header__link:last-child {
@@ -72,9 +72,9 @@ a {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  left: calc((100% - 1400px) / 2);
+  left: calc((100% - 1280px) / 2);
   color: rgb(238, 247, 159);
-  font-family: Verdana;
+  font-family: "Times New Roman";
   z-index: 1;
 }
 
@@ -86,11 +86,35 @@ a {
   font-size: 24px;
   width: 884px;
 }
-.tab td,
-.tab th {
-  border: 1px solid black;
+
+.section {
 }
 
-.tablica {
-  border-collapse: collapse;
+.section.section_dark {
+  background: rgb(223, 161, 46);
+}
+
+.section__inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.section__title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+}
+.section__description {
+  text-align: center;
+  max-width: 860px;
+  line-height: 150%;
+  margin: 0 auto;
+  font-size: 22px;
+}
+.section.section_dark .section__title {
+  color: #395533;
+}
+.section.section_dark .section__description {
+  color: #395533;
 }
