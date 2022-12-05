@@ -1,120 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.form {
+}
+.form__row {
+  margin-bottom: 24px;
 }
 
-.header {
-  background: #070606ea;
+.form__label {
+  display: block;
+}
+.form__input {
 }
 
-a {
-  text-decoration: none;
-  color: initial;
+.form__input::placeholder {
+  color: rgb(142, 167, 167);
 }
-.header__inner {
-  width: 1280px;
-  margin: 0 auto;
+.form_label_inline {
+  display: inline;
+}
+.form__row_radio {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  column-gap: 20px;
 }
-
-.header__figure {
-  width: 200px;
-  height: 80px;
-}
-
-.header__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.header__nav {
-  display: flex;
-  color: #395533;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.header__link {
-  margin-right: 48px;
-  color: white;
-  font-family: "Times New Roman";
-}
-
-.header__link:last-child {
-  margin-right: 0;
-}
-.hero {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 80px);
-}
-
-.hero__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero__overlay {
-  position: absolute;
-  background-color: #000000a4;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.hero__content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  left: calc((100% - 1280px) / 2);
-  color: rgb(238, 247, 159);
-  font-family: "Times New Roman";
-  z-index: 1;
-}
-
-.hero__title {
-  font-size: 64px;
-  margin-bottom: 48px;
-}
-.hero__subheading {
-  font-size: 24px;
-  width: 884px;
-}
-
-.section {
-}
-
-.section.section_dark {
-  background: rgb(223, 161, 46);
-}
-
-.section__inner {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 120px 0;
-}
-.section__title {
-  font-size: 56px;
-  text-align: center;
-  margin-bottom: 32px;
-  color: rgb(0, 0, 0);
-}
-.section__description {
-  text-align: center;
-  max-width: 860px;
-  line-height: 150%;
-  margin: 0 auto;
-  font-size: 22px;
-}
-.section.section_dark .section__title {
-  color: #395533;
-}
-.section.section_dark .section__description {
-  color: #395533;
+.komentar {
 }
