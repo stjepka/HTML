@@ -2,59 +2,124 @@
 <html>
   <head>
     <title>Uređivanje teksta</title>
-    <meta name="description" content="Ovo je moj extra page" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--to je za ekspanzivnost-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Web dizajn</h1>
-    <section>
-      <h2>Uvod u web dizajn</h2>
+    <header></header>
+    <main>
+      <!--glavni line za obrasce-->
+      <form action="" method="post" class="form">
+      <div class="form__row">
+        <label for="newsletter" class="form__label">
+          <input
+            type="checkbox"
+            class="form__input"
+            id="newsletter"
+            name="newsletter"
+            checked
+          />Želim primati obavijesti</label
+        >
+      </div>
+      <div class="form__row form__row_radio">
+        <div class="form__option">
+          <label for="ocjena1" class="form__label form_label_inline">1</label>
+          <input
+            type="radio"
+            class="form__input"
+            id="ocjena1"
+            name="ocjena"
+            value="1"
+          />
+        </div>
+        <div class="form__option">
+          <label for="ocjena2" class="form__label form_label_inline">2</label>
+          <input
+            type="radio"
+            class="form__input"
+            id="ocjena2"
+            name="ocjena"
+            value="2"
+          />
+        </div>
+        <div class="form__option">
+          <label for="ocjena3" class="form__label form_label_inline">3</label>
+          <input
+            type="radio"
+            class="form__input"
+            id="ocjena3"
+            name="ocjena"
+            value="3"
+          />
+        </div>
+        <div class="form__option">
+          <label for="ocjena4" class="form__label form_label_inline">4</label>
+          <input
+            type="radio"
+            class="form__input"
+            id="ocjena4"
+            name="ocjena"
+            value="4"
+          />
+        </div>
+        <div class="form__option">
+          <label for="ocjena5" class="form__label form_label_inline">5</label>
+          <input
+            type="radio"
+            class="form__input"
+            id="ocjena5"
+            name="ocjena"
+            value="5"
+          />
+        </div>
+      </div>
+      <div class="form__row">
+        <label for="upload" class="form__label">Upload a file...</label>
+        <input type="file" class="form__input" id="upload" name="upload" />
+      </div>
+      <div class="form__row">
+        <label for="calendar" class="form__label">Kalendar</label>
+        <input type="date" class="form__input" id="date" name="date" />
+      </div>
+      <div class="komentar">
+        <label for="text" class="form__label">Upišite Vaš komentar</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+      </div>
+<!--padajući izbornik-->
+      <div class="form__row">
+        <label for="seminar" class="form__label">Odaberite seminar</label>
+        <select name="seminar" id="seminar" class="form__input">
+          <option value="option1">Rim</option>
+          <option value="option2">Pariz</option>
+          <option value="option3">London</option>
+        </select>
+      </div>
+<!--upisivanje s mogućim padajućim izbornikom-->
+      <div class="form__row">
+        <label for="gradovi" class="form__label"
+          >Odaberite ili upišite grad</label
+        >
+        <input list="gradovi" name="gradovi" />
+        <datalist id="gradovi">
+          <option value="Rim"></option>
+          <option value="Pariz"></option>
+          <option value="London"></option>
+        </datalist>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-    </section>
-    <section>
-      <h2>HTML</h2>
-      <h3>Povijest HTML-a</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-    </section>
-    <section>
-      <h3>Sintaksa i pravila pisanja</h3>
-      <h4>Sintaksa HTML-a</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-      <h4>Pravila pisanja</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-      <h3>CSS</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-      <h4>Povijest CSS-a</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat,
-        nobis ullam tempore iste natus cum! Saepe nihil aut veniam iure aliquid
-        quisquam atque vel! Porro neque nemo non suscipit.
-      </p>
-      <h4>Sintaksa i pravila pisanja</h4>
-    </section>
+        <input type="submit" />
+        <audio type="audio/mpeg" src="Anica  Kninska Kraljica.mp3" controls id="anica"></audio>
+
+      </div>
+    
+
+      <button type="reset">Poništi obrazac</button>
+      <button>Pošalji podatke</button>
+    </main>
+    <footer></footer>
+  </form>
   </body>
+  <script src="script.js"></script>
 </html>

@@ -1,13 +1,24 @@
-h1 {
-  color: rgb(252, 111, 181);
-  margin: 150px;
-  margin-left: 600px;
-  background-color: rgb(188, 211, 255);
+.form {
+}
+.form__row {
+  margin-bottom: 24px;
 }
 
-section {
-  padding: 24px 48px;
-  background-color: rgb(250, 219, 179);
-  margin-bottom: 36px;
-  border-radius: 100px;
+.form__label {
+  display: block;
+}
+.form__input {
+}
+
+.form__input::placeholder {
+  color: rgb(142, 167, 167);
+}
+.form_label_inline {
+  display: inline;
+}
+.form__row_radio {
+  display: flex;
+  column-gap: 20px;
+}
+.komentar {
 }
