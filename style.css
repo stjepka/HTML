@@ -13,7 +13,7 @@ a {
   color: initial;
 }
 .header__inner {
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -66,13 +66,13 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .hero__content {
   position: absolute;
   top: 50%;
-  left: 0;
   transform: translateY(-50%);
-  left: calc((100% - 1400px) / 2);
+  left: calc((100% - 1280px) / 2);
   color: rgb(238, 247, 159);
   font-family: Verdana;
   z-index: 1;
@@ -82,7 +82,71 @@ a {
   font-size: 64px;
   margin-bottom: 48px;
 }
+
 .hero__subheading {
   font-size: 24px;
   width: 884px;
+}
+.section {
+}
+
+.section__inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.section__title {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 32px; /* ovo stavljamo da se title odvoji od drugog contenta*/
+}
+
+.section.section_dark {
+  background: rgb(36, 8, 8);
+}
+
+.section.section_dark .section__title {
+  color: white;
+}
+
+.section__description {
+  font-size: 22px;
+  text-align: center;
+  max-width: 930px;
+  margin: 0 auto;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+.section.section_dark .section__description {
+  font-size: 24px;
+  color: #d6d4c5;
+}
+.card-about {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.card-about__figure {
+  height: 280px;
+}
+
+.card-about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-about__title {
+  font-size: 24px;
+  padding: 12px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
 }
