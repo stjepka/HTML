@@ -13,7 +13,7 @@
 .form__input::placeholder {
   color: rgb(142, 167, 167);
 }
-.form_label_inline {
+.form__label_inline {
   display: inline;
 }
 .form__row_radio {

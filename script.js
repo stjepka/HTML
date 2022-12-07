@@ -1,5 +1,8 @@
-var audioElement = document.getElementById("audio-player");
+function handleSubmit() {
+  const nameAndSurname = document.getElementById("nameAndSurname").value;
+  const email = document.getElementById("email").value;
+  const tel = document.getElementById("tel").value;
+  const date = document.getElementById("date").value;
 
-function playAudio() {
-  audioElement.play();
+  console.log([nameAndSurname, email, tel, date]);
 }

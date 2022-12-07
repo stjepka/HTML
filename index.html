@@ -13,113 +13,109 @@
     <main>
       <!--glavni line za obrasce-->
       <form action="" method="post" class="form">
-      <div class="form__row">
-        <label for="newsletter" class="form__label">
+        <div class="nameAndSurname">
+          <label for="nameAndSurname" class="form__label"
+            >Ime i prezime *</label
+          >
           <input
-            type="checkbox"
-            class="form__input"
-            id="newsletter"
-            name="newsletter"
-            checked
-          />Želim primati obavijesti</label
-        >
-      </div>
-      <div class="form__row form__row_radio">
-        <div class="form__option">
-          <label for="ocjena1" class="form__label form_label_inline">1</label>
-          <input
-            type="radio"
-            class="form__input"
-            id="ocjena1"
-            name="ocjena"
-            value="1"
+            type="text"
+            id="nameAndSurname"
+            name="nameAndSurname"
+            placeholder="Vaše ime i prezime"
+            required
           />
         </div>
-        <div class="form__option">
-          <label for="ocjena2" class="form__label form_label_inline">2</label>
+        <br />
+        <div class="email">
+          <label for="email" class="form__label">E-mail adresa *</label>
           <input
-            type="radio"
-            class="form__input"
-            id="ocjena2"
-            name="ocjena"
-            value="2"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Upišite valjanu e-mail adresu"
+            required
           />
         </div>
-        <div class="form__option">
-          <label for="ocjena3" class="form__label form_label_inline">3</label>
+        <br />
+        <div class="tel">
+          <label for="tel" class="form__label">Kontakt broj telefona</label>
           <input
-            type="radio"
-            class="form__input"
-            id="ocjena3"
-            name="ocjena"
-            value="3"
+            type="text"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           />
         </div>
-        <div class="form__option">
-          <label for="ocjena4" class="form__label form_label_inline">4</label>
-          <input
-            type="radio"
-            class="form__input"
-            id="ocjena4"
-            name="ocjena"
-            value="4"
-          />
-        </div>
-        <div class="form__option">
-          <label for="ocjena5" class="form__label form_label_inline">5</label>
-          <input
-            type="radio"
-            class="form__input"
-            id="ocjena5"
-            name="ocjena"
-            value="5"
-          />
-        </div>
-      </div>
-      <div class="form__row">
-        <label for="upload" class="form__label">Upload a file...</label>
-        <input type="file" class="form__input" id="upload" name="upload" />
-      </div>
-      <div class="form__row">
-        <label for="calendar" class="form__label">Kalendar</label>
-        <input type="date" class="form__input" id="date" name="date" />
-      </div>
-      <div class="komentar">
-        <label for="text" class="form__label">Upišite Vaš komentar</label>
-        <textarea name="text" id="text" cols="30" rows="10"></textarea>
-      </div>
-<!--padajući izbornik-->
-      <div class="form__row">
-        <label for="seminar" class="form__label">Odaberite seminar</label>
-        <select name="seminar" id="seminar" class="form__input">
-          <option value="option1">Rim</option>
-          <option value="option2">Pariz</option>
-          <option value="option3">London</option>
-        </select>
-      </div>
-<!--upisivanje s mogućim padajućim izbornikom-->
-      <div class="form__row">
-        <label for="gradovi" class="form__label"
-          >Odaberite ili upišite grad</label
-        >
-        <input list="gradovi" name="gradovi" />
-        <datalist id="gradovi">
-          <option value="Rim"></option>
-          <option value="Pariz"></option>
-          <option value="London"></option>
-        </datalist>
+        <br />
 
-        <input type="submit" />
-        <audio type="audio/mpeg" src="Anica  Kninska Kraljica.mp3" controls id="anica"></audio>
+        <div class="form__row">
+          <label for="calendar" class="form__label">Datum rođenja</label>
+          <input type="date" class="form__input" id="date" name="date" />
+        </div>
 
-      </div>
-    
-
-      <button type="reset">Poništi obrazac</button>
-      <button>Pošalji podatke</button>
+        <div class="form__row">
+          <p class="form_paragraph">
+            Koje jezike govorite?<br />
+            <label for="language1" class="language1">
+              <input
+                type="checkbox"
+                class="form__label_inline"
+                id="language1"
+                name="language"
+              />Engleski</label
+            >
+            <label for="language2" class="language2">
+              <input
+                type="checkbox"
+                class="form__label_inline"
+                id="language2"
+                name="language"
+              />Talijanski</label
+            >
+            <label for="language3" class="language3">
+              <input
+                type="checkbox"
+                class="form__label_inline"
+                id="language3"
+                name="language"
+              />Njemački</label
+            >
+            <label for="language4" class="language4">
+              <input
+                type="checkbox"
+                class="form__label_inline"
+                id="language4"
+                name="language"
+              />Francuski</label
+            >
+            <label for="language5" class="language5">
+              <input
+                type="checkbox"
+                class="form__label_inline"
+                id="language5"
+                name="language"
+              />Španjolski</label
+            >
+          </p>
+        </div>
+        <div class="form__row">
+          <p class="form_paragraph">
+            Jeste li se do sada koristili našim uslugama?<br />
+            <input type="radio" id="da" name="opcija" />
+              <label for="da" class="form__label_inline">da</label>  
+            <input type="radio" id="ne" name="opcija" />  
+            <label for="css" class="form_label_inline">ne</label>
+          </p>
+        </div>
+        <div class="form__row">
+          <label for="upload" class="form__label">Priložite životopis</label>
+          <input type="file" class="form__input" id="upload" name="upload" />
+        </div>
+        <button type="reset">Poništi</button>
+        <button type="button" onclick="handleSubmit()">Prijavi se</button>
+      </form>
     </main>
     <footer></footer>
-  </form>
   </body>
   <script src="script.js"></script>
 </html>
